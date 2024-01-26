@@ -104,12 +104,7 @@ public class Game {
     }
 
     public boolean isFull(){
-        for (int i = 0; i < gameMap[0].length; i++) {
-            if (gameMap[0][i].equals(" ")){
-                return false;
-            }
-        }
-        return true;
+        return !Arrays.asList(gameMap[0]).contains(" ");
     }
 
     public String getPlayer() {
